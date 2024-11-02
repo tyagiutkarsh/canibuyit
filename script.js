@@ -7,7 +7,7 @@ document.getElementById("calculate-btn").addEventListener("click", () => {
         return;
     }
 
-    const workDays = Math.ceil(price / salary);
+    const workDays = Math.floor(price / salary);
     const purchaseDate = new Date();
     purchaseDate.setDate(purchaseDate.getDate() + workDays);
 
