@@ -6,8 +6,8 @@ document.getElementById("calculate-btn").addEventListener("click", () => {
         alert("Please enter both the product price and your salary.");
         return;
     }
-
-    const workDays = Math.floor(price / salary);
+    
+    const workDays = Math.floor(price / (salary/30)); //30 day month
     const purchaseDate = new Date();
     purchaseDate.setDate(purchaseDate.getDate() + workDays);
 
