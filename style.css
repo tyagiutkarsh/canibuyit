@@ -45,3 +45,44 @@ button:hover {
     border-radius: 5px;
     text-align: center;
 }
+
+/* General Reset */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  background-color: #333; /* Dark background color */
+  display: flex;
+  justify-content: center; /* Center the navigation bar */
+  padding: 10px 0; /* Add vertical padding */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px; /* Space between navigation items */
+}
+
+.navbar li {
+  display: inline; /* Inline list items */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+  font-size: 18px; /* Font size */
+  font-family: Arial, sans-serif; /* Font family */
+  padding: 8px 16px; /* Padding around links */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+  background-color: #555; /* Change background on hover */
+  color: #fff; /* Keep text white */
+}
+
